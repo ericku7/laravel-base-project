@@ -17,7 +17,7 @@ class MustLogin
     public function handle($request, Closure $next)
     {
         if(Auth::check()){
-            return redirect('dashboard');
+            return redirect('home');
         }
         return $next($request);
     }

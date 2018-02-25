@@ -1,0 +1,244 @@
+/*!
+ * Swiftrend Project
+ * Copyright 2017-2020 Swiftrend Online Shopping
+ */
+@font-face {
+    font-family: Circular;
+    src: url("../fonts/Circular_Air-Bold.eot");
+    src: url("../fonts/Circular_Air-Bold.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal
+}
+@font-face {
+    font-family: Circular_Air-Book_Italic;
+    src: url("../fonts/Circular_Air-Book_Italic.eot");
+    src: url("../fonts/Circular_Air-Book_Italic.woff2") ;
+    font-weight: normal;
+    font-style: italic
+}
+@font-face {
+    font-family: CircularAir-Light;
+    src: url("../fonts/Circular_Air-Light.eot");
+    src: url("../fonts/Circular_Air-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal
+}
+body{
+    font-family: CircularAir-Light,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #484848;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 0;
+    margin: 0;
+}
+.carousel-item {
+    height: 75vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.navbar-expand-lg .navbar-nav.top-links .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 2.5rem;
+}
+.navbar-light .navbar-nav.top-links .nav-link{
+    color: #000;
+}
+.navbar-light .navbar-brand{
+    background: #f73434;
+    color:#fff;
+    padding: 1.65rem 2rem 1rem 2rem;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+}
+.navbar.topbar{
+    padding: 0 !important;
+}
+.navbar.menu-bar{
+    background: #111111;
+}
+.cart-panel{
+    padding: 1.8rem 2rem 1rem 2rem;
+    border-left: 1px solid #19192624;
+    margin-left: 2rem;
+}
+.cart-panel a:before{
+    font-size: 20px;
+    color: #f73434;
+    font-weight: 500;
+}
+.cart-panel .badge{
+    background:red;
+    position:relative;
+    top: -16px;
+    left: -5px;
+    border-radius:  100%;
+}
+.carousel-control-prev .icon{
+    font-size: 15px;
+    background: #f73434;
+    padding: 10px;
+}
+.carousel-control-next .icon{
+    font-size: 15px;
+    background: #f73434;
+    padding: 10px;
+}
+.hashtag{
+    color:#fff;
+}
+.footer {
+    width: 100%;
+    position: relative;
+    line-height: 60px;
+    background: #111111;
+}
+.footer-cols{
+    color: rgba(255,255,255,.75);
+    padding: 50px 0 30px;
+}
+.footer-cols ul{
+    list-style: none;
+    padding-left: 5px;
+    margin-top: 16px;
+}
+.footer-cols li{
+    
+    display: list-item;
+    text-align: -webkit-match-parent;
+    font: inherit !important;
+    line-height: 30px !important;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+    text-decoration: none !important;
+}
+.footer-link{
+    color: rgba(255,255,255,.75) !important;
+    text-decoration: none;
+    -webkit-font-smoothing:  antialiased;
+}
+.footer-link:hover{
+    color: #fff !important;
+    text-decoration: none;
+}
+.footer-list-title{
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+    font-size: 17px !important;
+    line-height: 18px !important;
+    letter-spacing: 0.2px !important;
+    font-weight: 700 !important;
+    color: #fff !important;
+    margin:  0px;
+}
+.copyright{
+    background: #fff;
+}
+.dropdown-menu .divider {
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}
+.drop-list {
+    padding: 5px 5px;
+    font-weight: 400 !important;
+    font-size: 14px;
+}
+.profile-list{
+    padding: 12px;
+}
+.side-panel{
+    padding: 20px !important;
+}
+.copyright p{
+    margin-bottom: 0px !important;
+    color: #000;
+    font-weight:  bold;
+}
+.newsletter{
+    line-height: 30px;
+    margin-top: 16px;
+}
+.newsletter-input{
+    font-size: 14px;
+}
+.profile{
+    border-radius: 100%;
+}
+.dropdown-menu li > a{
+    padding: 5px 15px;
+}
+.search-bar{
+    display: inline-block;
+    position: relative;
+    border: 1px solid #dddddd;
+    border-radius: 50px;
+    background: #fff;
+    padding-right: 0px !important;
+}
+.search-bar .submit{
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background: #f73434;
+    color: #ffffff;
+    border: none;
+}
+.search-bar .search-input{
+    border: none !important;
+}
+.search-panel{
+    padding: 3px;
+}
+.search-panel .dropdown-toggle{
+        border-right: 1px solid #ddd;
+    }
+.dropdown-list-item{
+    margin: 6px 0px;
+    color: #333;
+    font-size: 1em;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,
+    Helvetica Neue,sans-serif !important;
+    -webkit-font-smoothing:antialiased;
+}
+.search-panel .btn{
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,
+    Helvetica Neue,sans-serif !important;
+    -webkit-font-smoothing:antialiased;
+}
+#search_content{
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,
+    Helvetica Neue,sans-serif !important;
+    -webkit-font-smoothing:antialiased;
+}
+.slide-title{
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,
+    Helvetica Neue,sans-serif !important;
+}
+.row-title{
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,
+    Helvetica Neue,sans-serif !important;
+    color: #000;
+    font-size: 32px;
+    line-height: 1.07143;
+    font-weight: 600;
+    letter-spacing: 0.005em;
+    margin-top: 47px;
+    padding-bottom: 47px;
+}
+.row-title:after{
+    top: 15px;
+    left: 50%;
+    bottom: 0;
+    position: relative;
+    width: 35px;
+    height: 2px;
+    content: "";
+    display: inherit;
+    background-color: #f73434;
+    transform: translateX(-50%);
+}

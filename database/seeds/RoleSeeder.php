@@ -22,18 +22,15 @@ class RoleSeeder extends Seeder
             'slug' => 'admin',
         ]);
 
-        $admin_user = User::where('email', '=', 'admin@mobilink.com')->first();
+        $admin_user = User::where('email', '=', 'admin@swiftrend.com')->first();
         $admin_user->attachRole($adminRole);
 
-        $admin2_user = User::where('email', '=', 'pascal@mobilink.com')->first();
-        $admin2_user->attachRole($adminRole);
-
-        $accountManager = Role::create([
-            'name' => 'Account Manager',
-            'slug' => 'manager'
+        $account_client = Role::create([
+            'name' => 'Customer',
+            'slug' => 'client'
         ]);
 
-        $account_manager = User::where('email', '=', 'manager@mobilink.com')->first();
-        $account_manager->attachRole($accountManager);
+        $account_manager = User::where('email', '=', 'customer@swiftrend.com')->first();
+        $account_manager->attachRole($account_client);
     }
 }

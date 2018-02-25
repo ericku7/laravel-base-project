@@ -1,6 +1,19 @@
 <?php
 
 return [
+    /*
+    |--------------------------------------------------------------------------
+    | Application Name
+    |--------------------------------------------------------------------------
+    |
+    | This value is the name of your application. This value is used when the
+    | framework needs to place the application's name in a notification or
+    | any other location as required by the application or its packages.
+    */
+
+    'name' => 'Swiftrend',
+
+    'subtitle' => 'Self Confidence is the Best Outfit',
 
     /*
     |--------------------------------------------------------------------------
@@ -161,7 +174,6 @@ return [
         Bican\Roles\RolesServiceProvider::class,
         Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
         Acacha\AdminLTETemplateLaravel\Providers\AdminLTETemplateServiceProvider::class,
-        Mob\Providers\MobServiceProvider::class,
     ],
 
     /*
@@ -211,7 +223,6 @@ return [
         'AdminLTE' => Acacha\AdminLTETemplateLaravel\Facades\AdminLTE::class,
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
-        'MobUsers' => Mob\Facades\MobUsers::class,
 
 
     ],

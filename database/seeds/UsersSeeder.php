@@ -17,9 +17,10 @@ class UsersSeeder extends Seeder
     public function run()
     {
         DB::table('users')->delete();
-        User::create(['email' => 'admin@mobilink.com' , 'username' => 'admin user', 'password' => Hash::make('admin'), 'phone' => '+250786160780']);
-        User::create(['email' => 'pascal@mobilink.com', 'username' => 'Pascal', 'password' => Hash::make('pascal'), 'phone' => '+250788355919']);
-        User::create(['email' => 'manager@mobilink.com', 'username' => 'account manager', 'password' => Hash::make('manager'), 'phone' => '+250727110300']);
+        
+        User::create(['email' => 'admin@swiftrend.com' , 'fname' => 'Stella','lname' => 'Ingabire', 'password' => Hash::make('admin'), 'phone' => '+250786160780']);
+
+        User::create(['email' => 'customer@swiftrend.com', 'fname' => 'Eric','lname' => 'Ku', 'password' => Hash::make('customer'), 'phone' => '+250788355919']);
 
     }
 }
