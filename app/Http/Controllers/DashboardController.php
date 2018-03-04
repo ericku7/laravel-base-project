@@ -1,24 +1,17 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
-
-use App\Http\Requests;
+use App\User;
+use Bican\Roles\RolesServiceProvider;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Redirect;
+use Psy\Util\Json;
 
 class DashboardController extends Controller
 {
-
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function frontEnd()
-    {
-        return view('welcome');
-    }
-
     /**
      * Display a listing of the resource.
      *
@@ -26,7 +19,14 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        //
+        $user = Auth::user();
+        if ($user->isAdmin()) {
+
+            return view('dashboard.index');
+        }
+        else {
+            return view('dashboard.customer-index');
+        }
     }
 
     /**

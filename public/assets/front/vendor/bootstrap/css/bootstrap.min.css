@@ -1946,7 +1946,7 @@ pre code {
     display: block;
     width: 100%;
     padding: .375rem .75rem;
-    font-size: 1rem;
+    font-size: 14px;
     line-height: 1.5;
     color: #495057;
     background-color: #fff;
@@ -1954,7 +1954,7 @@ pre code {
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: .25rem;
-    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 
 .form-control::-ms-expand {
@@ -2431,19 +2431,19 @@ fieldset[disabled] a.btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #007bff;
-    border-color: #007bff
+    background-color: #f73434;
+    border-color: #f73434;
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc
+    background-color: #f73434;
+    border-color: #f73434;
 }
 
 .btn-primary.focus,
 .btn-primary:focus {
-    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .5)
+    box-shadow: #f73434;
 }
 
 .btn-primary.disabled,
@@ -2456,9 +2456,9 @@ fieldset[disabled] a.btn {
 .btn-primary:not([disabled]):not(.disabled):active,
 .show>.btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #0062cc;
-    border-color: #005cbf;
-    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .5)
+    background-color: #f73434;
+    border-color: #f73434;
+    box-shadow: 0 0 0 .2rem #f73434;
 }
 
 .btn-secondary {
@@ -3067,7 +3067,7 @@ tbody.collapse.show {
     float: left;
     min-width: 10rem;
     padding: .5rem 0;
-    margin: .125rem 0 0;
+    margin: .325rem 0 0;
     font-size: 1rem;
     color: #212529;
     text-align: left;
@@ -3075,7 +3075,7 @@ tbody.collapse.show {
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, .15);
-    border-radius: .25rem
+    border-radius: .25rem;
 }
 
 .dropup .dropdown-menu {
@@ -3721,9 +3721,8 @@ tbody.collapse.show {
 }
 
 .nav-tabs .nav-link {
-    border: 1px solid transparent;
     border-top-left-radius: .25rem;
-    border-top-right-radius: .25rem
+    border-top-right-radius: .25rem;
 }
 
 .nav-tabs .nav-link:focus,
@@ -4008,7 +4007,7 @@ tbody.collapse.show {
         left: auto
     }
     .navbar-expand-lg .navbar-nav .nav-link {
-        padding-right: 7.5rem;
+        padding-right: 5.5rem;
         padding-left: 0.5rem;
     }
     .navbar-expand-lg>.container,
@@ -4247,8 +4246,9 @@ tbody.collapse.show {
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, .125);
-    border-radius: .25rem
+    border: 1px solid rgba(0, 0, 0, 0.02);
+    border-radius: .25rem;
+    box-shadow: 1px 14px 23px 0 rgba(168, 187, 201, 0.1);
 }
 
 .card>hr {
@@ -4269,7 +4269,7 @@ tbody.collapse.show {
 .card-body {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
-    padding: 1.25rem
+    padding: 1.25rem;
 }
 
 .card-title {

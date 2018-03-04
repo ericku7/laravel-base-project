@@ -69,7 +69,15 @@
 <!-- Bootstrap core JavaScript -->
     <script src="./assets/front/vendor/jquery/jquery.min.js"></script>
     <script src="./assets/front/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/front/js/letter_initial.js"></script>
+    <script src="./assets/back/js/letter_initial.js"></script>
+    <script src="./assets/back/node_modules/select2/dist/js/select2.min.js"></script>
+    <script src="./assets/back/js/select2.js"></script>
+    
+<script type="text/javascript">
+  $(document).ready(function(){
+      $('.profile').initial({width:40,height:40});
+  })
+</script>
     <script type="text/javascript">
     	$(document).ready(function(e){
 		    $('.search-panel .dropdown-menu').find('a').click(function(e) {
